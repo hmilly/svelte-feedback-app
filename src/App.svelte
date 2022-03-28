@@ -1,36 +1,20 @@
 <script>
-  //   let first = "H";
-  //   let last = "m"
-  //   $: name = first  + last
+  import FeedbackList from "./components/FeedbackList.svelte";
+  import FeedbackStats from "./components/FeedbackStats.svelte";
+  import FeedbackForm from "./components/FeedbackForm.svelte";
 </script>
 
-<main>
-  <!-- <h1>Hi {name}!</h1>
-  <p>
-
- 
-  </p> -->
+<main class="container">
+  <FeedbackForm />
+  <FeedbackStats />
+  <FeedbackList />
 </main>
 
 <style>
   main {
     text-align: center;
-	height: 100vh;
-
+    height: 100vh;
     margin: 0 auto;
-	background-color: navy;
-  }
-
-  h1 {
-    color: #ff3e00;
-    text-transform: uppercase;
-    font-size: 4em;
-    font-weight: 100;
-  }
-
-  @media (min-width: 640px) {
-    main {
-      max-width: none;
-    }
+    padding: 0 20px;
   }
 </style>
